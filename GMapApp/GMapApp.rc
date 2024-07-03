@@ -1,0 +1,1011 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#include ""res\\GMapApp.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#include ""l.CHS\\afxprint.rc""    // 打印/打印预览资源\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.CHS\\afxribbon.rc""        // MFC 功能区和控制条资源\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GMapApp.ico"
+
+IDR_GMapAppTYPE         ICON                    "res\\GMapAppDoc.ico"
+
+IDI_FILE_VIEW           ICON                    "res\\file_view.ico"
+
+IDI_FILE_VIEW_HC        ICON                    "res\\file_view_hc.ico"
+
+IDI_CLASS_VIEW          ICON                    "res\\class_view.ico"
+
+IDI_CLASS_VIEW_HC       ICON                    "res\\class_view_hc.ico"
+
+IDI_OUTPUT_WND          ICON                    "res\\output_wnd.ico"
+
+IDI_OUTPUT_WND_HC       ICON                    "res\\output_wnd_hc.ico"
+
+IDI_PROPERTIES_WND      ICON                    "res\\properties_wnd.ico"
+
+IDI_PROPERTIES_WND_HC   ICON                    "res\\properties_wnd_hc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+
+IDR_SORT                BITMAP                  "res\\sort.bmp"
+
+IDB_SORT_24             BITMAP                  "res\\sort_hc.bmp"
+
+IDB_FILE_VIEW           BITMAP                  "res\\fileview.bmp"
+
+IDB_FILE_VIEW_24        BITMAP                  "res\\fileview_hc.bmp"
+
+IDB_CLASS_VIEW          BITMAP                  "res\\classview.bmp"
+
+IDB_CLASS_VIEW_24       BITMAP                  "res\\classview_hc.bmp"
+
+IDR_EXPLORER            BITMAP                  "res\\explorer.bmp"
+
+IDB_EXPLORER_24         BITMAP                  "res\\explorer_hc.bmp"
+
+IDR_MENU_IMAGES         BITMAP                  "res\\menuimages.bmp"
+
+IDB_MENU_IMAGES_24      BITMAP                  "res\\menuimages_hc.bmp"
+
+IDR_PROPERTIES          BITMAP                  "res\\properties.bmp"
+
+IDB_PROPERTIES_HC       BITMAP                  "res\\properties_hc.bmp"
+
+IDB_BITMAP_COORD_SYS    BITMAP                  "res\\bitmap1.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_SORT TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_SORT_MENU
+    BUTTON      ID_NEW_FOLDER
+END
+
+IDR_EXPLORER TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_PROPERTIES
+END
+
+IDR_MENU_IMAGES TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_WINDOW_MANAGER
+    SEPARATOR
+    BUTTON      ID_WINDOW_CASCADE
+    BUTTON      ID_WINDOW_TILE_HORZ
+    BUTTON      ID_TOOLS_MACRO
+    BUTTON      ID_SORTING_SORTALPHABETIC
+    BUTTON      ID_SORTING_SORTBYTYPE
+    BUTTON      ID_SORTING_SORTBYACCESS
+    BUTTON      ID_SORTING_GROUPBYTYPE
+END
+
+IDR_PROPERTIES TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_EXPAND_ALL
+    BUTTON      ID_SORTPROPERTIES
+    BUTTON      ID_PROPERTIES1
+    BUTTON      ID_PROPERTIES2
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        POPUP "工具栏和停靠窗口(&T)"
+        BEGIN
+            MENUITEM "<占位符>",                       ID_VIEW_TOOLBAR
+        END
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        POPUP "应用程序外观(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",            ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",               ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",              ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",             ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio 200&5",         ID_VIEW_APPLOOK_VS_2005
+            MENUITEM "Visual Studio 200&8",         ID_VIEW_APPLOOK_VS_2008
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "蓝色样式(&B)",                    ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "黑色样式(&L)",                    ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "银色样式(&S)",                    ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "水绿色样式(&A)",                   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+    END
+    POPUP "地图"
+    BEGIN
+        MENUITEM "全图",                          ID_FULL_MAP_EXTENT
+        MENUITEM SEPARATOR
+        MENUITEM "图层管理",                        ID_LAYER_MANAGE
+        MENUITEM SEPARATOR
+        MENUITEM "testDLG",                     ID_TEST_DLG
+    END
+    POPUP "资源管理"
+    BEGIN
+        MENUITEM "数据源管理",                       ID_VT_DATA_SOURCE_MANAGER
+        MENUITEM "符号管理",                        ID_SYMBOL_MANAGER
+        MENUITEM "投影管理",                        ID_PROJ_MANAGER
+    END
+    POPUP "编辑交互"
+    BEGIN
+        MENUITEM "地图交互",                        ID_MAP_PAN_ZOOM
+        MENUITEM SEPARATOR
+        MENUITEM "添加点",                         ID_ADD_POINT_ELEMENT
+        MENUITEM "添加线",                         ID_ADD_LINE_ELEMENT
+        MENUITEM "添加面",                         ID_ADD_POLYGON
+        MENUITEM SEPARATOR
+        MENUITEM "编辑几何",                        ID_EDIT_GEOMETRY
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 GMapApp(&A)...",           ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_EDIT MENU
+BEGIN
+    POPUP "编辑"
+    BEGIN
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_POPUP_SORT MENU
+BEGIN
+    POPUP "排序"
+    BEGIN
+        MENUITEM "按字母顺序排序(&S)",                 ID_SORTING_SORTALPHABETIC
+        MENUITEM "按类型排序(&T)",                   ID_SORTING_SORTBYTYPE
+        MENUITEM "按访问排序(&E)",                   ID_SORTING_SORTBYACCESS
+        MENUITEM "按类型分组(&Y)",                   ID_SORTING_GROUPBYTYPE
+    END
+END
+
+IDR_POPUP_EXPLORER MENU
+BEGIN
+    POPUP "资源管理器"
+    BEGIN
+        MENUITEM "打开(&O)",                      ID_OPEN
+        MENUITEM "打开方式(&W)....",                ID_OPEN_WITH
+        MENUITEM SEPARATOR
+        MENUITEM "编译(&C)",                      ID_DUMMY_COMPILE
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "移除(&R)",                      ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "属性(&P)...",                   ID_PROPERTIES
+    END
+END
+
+IDR_OUTPUT_POPUP MENU
+BEGIN
+    POPUP "弹出项"
+    BEGIN
+        MENUITEM "复制(&C)",                      ID_EDIT_COPY
+        MENUITEM "清除(&C)",                      ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "隐藏(&H)",                      ID_VIEW_OUTPUTWND
+    END
+END
+
+IDR_HELP_MENU MENU
+BEGIN
+    MENUITEM "关于 GMapApp(&A)...",           ID_APP_ABOUT
+END
+
+IDR_THEME_MENU MENU
+BEGIN
+    MENUITEM "Office 2007 (蓝色样式)(&B)",      ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (黑色样式)(&L)",      ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (银色样式)(&S)",      ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (水绿色样式)(&A)",     ID_VIEW_APPLOOK_OFF_2007_AQUA
+    MENUITEM "Windows 7(&D)",               ID_VIEW_APPLOOK_WINDOWS_7
+END
+
+IDR_MENU_NEW_STYLE MENU
+BEGIN
+    POPUP "点符号菜单"
+    BEGIN
+        MENUITEM "图像点图元",                       ID_NEW_IMAGE_MARKER_STYLE
+    END
+    POPUP "线符号菜单"
+    BEGIN
+        MENUITEM "简单线符号",                       ID_NEW_SIMPLE_LINE_STYLE
+    END
+    POPUP "面符号菜单"
+    BEGIN
+        MENUITEM "颜色填充",                        ID_NEW_COLOR_FILL_STYLE
+        MENUITEM "图案填充",                        ID_NEW_HATCH_FILL_STYLE
+        MENUITEM "纹理填充",                        ID_NEW_TEXTURE_FILL_STYLE
+    END
+    POPUP "新建图层"
+    BEGIN
+        MENUITEM "新建绘图图层",                      ID_NEW_GRAPHICS_LAYER
+        MENUITEM "新建矢量图层",                      ID_NEW_VECTOR_LAYER
+        MENUITEM "新建图像图层",                      ID_NEW_IMAGE_LAYER
+    END
+    POPUP "设置符号化"
+    BEGIN
+        MENUITEM "查看符号化",                       ID_VIEW_LAYER_STYLE
+        MENUITEM SEPARATOR
+        MENUITEM "设置简单符号化",                     ID_SET_SIMPLE_RENDER
+        MENUITEM "设置分类符号化",                     ID_SET_CLASS_RENDER
+        MENUITEM SEPARATOR
+    END
+END
+
+IDR_MENU_VT_DATA_SOURCE MENU
+BEGIN
+    POPUP "数据源菜单"
+    BEGIN
+        MENUITEM "打开数据源",                       ID_OPEN_VT_DATASOURCE
+        MENUITEM "新建数据源",                       ID_CREATE_VT_DATASOURCE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 GMapApp"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "GMapApp，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2020",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_LAYER_MANAGER_DLG DIALOGEX 0, 0, 355, 217
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图层管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,83,196,50,14
+    PUSHBUTTON      "取消",IDCANCEL,169,196,50,14
+    CONTROL         "",IDC_LAYER_LIST_CTRL,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,285,185
+    PUSHBUTTON      "新建",IDC_NEW_LAYER_BTN,298,7,50,14
+    CONTROL         "可见",IDC_LAYER_VISIBLE_CHK_CTRL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,300,44,32,10
+    PUSHBUTTON      "删除",IDC_DELETE_LAYER_BTN,298,25,50,14
+    PUSHBUTTON      "属性",IDC_LAYER_PROP_CTRL,298,76,50,14
+    PUSHBUTTON      "地图坐标系",IDC_BTN_MAP_COORDSYS,298,57,50,14
+END
+
+IDD_IMAGE_MARKER_STYLE_EDIT_DLG DIALOGEX 0, 0, 278, 168
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图像点符号编辑器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,73,147,50,14
+    PUSHBUTTON      "取消",IDCANCEL,163,147,50,14
+    PUSHBUTTON      ">>",IDC_BTN_OPEN_IMAGE_FILE,226,37,25,20
+    LTEXT           "名字",IDC_STATIC,15,18,17,8
+    EDITTEXT        IDC_NAME_EDIT_CTRL,36,16,89,14,ES_AUTOHSCROLL
+    LTEXT           "图像文件名",IDC_STATIC,15,42,41,8
+    EDITTEXT        IDC_IMAGE_FILE_EDIT_CTRL,57,39,166,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_X_OFFSET_EDIT_CTRL,45,68,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_X_OFFSET_SPIN_CTRL,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,87,68,11,14
+    LTEXT           "X偏移",IDC_STATIC,15,71,21,8
+    EDITTEXT        IDC_Y_OFFSET_EDIT_CTRL,45,88,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_Y_OFFSET_SPIN_CTRL,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,87,88,11,14
+    LTEXT           "Y偏移",IDC_STATIC,15,91,21,8
+    EDITTEXT        IDC_WIDTH_EDIT_CTRL,45,106,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_WIDTH_SPIN_CTRL,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,87,106,11,14
+    LTEXT           "宽度",IDC_STATIC,15,109,17,8
+    EDITTEXT        IDC_HEIGHT_EDIT_CTRL,45,122,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_HEIGHT_SPIN_CTRL,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,87,122,11,14
+    LTEXT           "高度",IDC_STATIC,15,126,17,8
+    GROUPBOX        "预览",IDC_STYLE_PREVIEW,115,67,137,75
+END
+
+IDD_TEXTURE_FILL_STYLE_EDIT_DLG DIALOGEX 0, 0, 259, 187
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "纹理填充符号编辑器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,73,166,50,14
+    PUSHBUTTON      "取消",IDCANCEL,163,166,50,14
+    PUSHBUTTON      ">>",IDC_BTN_OPEN_IMAGE_FILE,225,39,21,17
+    LTEXT           "名字",-1,15,18,17,8
+    EDITTEXT        IDC_NAME_EDIT_CTRL,57,17,164,14,ES_AUTOHSCROLL
+    LTEXT           "图像文件名",-1,15,42,41,8
+    EDITTEXT        IDC_IMAGE_FILE_EDIT_CTRL,57,39,166,16,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "预览",IDC_PREVIEW_PANEL,18,84,230,75,0,WS_EX_TRANSPARENT
+    LTEXT           "重复模式",-1,15,64,33,8
+    COMBOBOX        IDC_WRAP_MODE_CBX,57,60,165,74,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_STYLE_MANAGER DIALOGEX 0, 0, 404, 319
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "符号管理器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,151,291,50,14
+    PUSHBUTTON      "取消",IDCANCEL,265,291,50,14
+    LTEXT           "ID",IDC_STATIC,22,226,8,8
+    EDITTEXT        IDC_STYLE_ID,43,226,93,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "名字",IDC_STATIC,22,252,17,8
+    EDITTEXT        IDC_STYLE_NAME,45,250,91,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "创建?",IDC_BTN_NEW_STYLE,328,226,50,14
+    CONTROL         "",IDC_STYLE_TAB,"SysTabControl32",TCS_FIXEDWIDTH | TCS_FOCUSNEVER,14,11,376,204
+    CONTROL         "",IDC_STYLE_LIST_CTRL,"SysListView32",LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,14,26,374,188
+    PUSHBUTTON      "编辑",IDC_EDIT_BTN_CTRL,328,260,50,14
+    GROUPBOX        "",IDC_STYLE_PANEL,145,223,177,52
+END
+
+IDD_SIMPLE_LINE_EDIT_DLG DIALOGEX 0, 0, 288, 217
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "简单线符号编辑器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,75,191,50,14
+    PUSHBUTTON      "取消",IDCANCEL,164,190,50,14
+    LTEXT           "名字",-1,15,18,17,8
+    EDITTEXT        IDC_NAME_EDIT_CTRL,51,16,74,14,ES_AUTOHSCROLL
+    GROUPBOX        "预览",IDC_PREVIEW_PANEL,17,132,254,54,0,WS_EX_TRANSPARENT
+    LTEXT           "颜色",-1,15,45,17,8
+    LTEXT           "",IDC_LINE_COLOR_PANEL,51,40,74,21,NOT WS_VISIBLE | WS_DISABLED,WS_EX_TRANSPARENT
+    PUSHBUTTON      ">>",IDC_LINE_COLOR_BTN,126,39,18,19
+    LTEXT           "线宽",-1,149,44,17,8
+    EDITTEXT        IDC_LINE_WIDTH_EDIT,189,41,73,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LINE_WIDTH_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,263,38,10,17
+    LTEXT           "虚线风格",-1,14,67,33,8
+    COMBOBOX        IDC_DASH_STYLE_CMB,51,64,89,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "虚线端头",-1,149,65,33,8
+    COMBOBOX        IDC_DASH_CAP_CMB,189,63,84,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "开始端头",-1,14,92,33,8
+    COMBOBOX        IDC_START_CAP_CMB,51,88,89,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "结束端头",-1,149,89,33,8
+    COMBOBOX        IDC_END_CAP_CMB,189,87,83,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "连接风格",-1,15,114,33,8
+    COMBOBOX        IDC_LINE_JOIN_CMB,50,110,89,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROGRESS_DLG DIALOGEX 0, 0, 262, 61
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU
+CAPTION "进度"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "静态",IDC_TX_TITLE,18,14,90,8
+    CONTROL         "",IDC_PROGRESS_BAR,"msctls_progress32",WS_BORDER,19,29,203,14
+    LTEXT           "静态",IDC_TX_DISPLAY_PROG,227,31,17,8
+END
+
+IDD_HATCH_FILL_STYLE_EDIT_DLG DIALOGEX 0, 0, 159, 216
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图案填充符号编辑器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,31,194,50,14
+    PUSHBUTTON      "取消",IDCANCEL,102,194,50,14
+    LTEXT           "名字",IDC_STATIC,15,18,17,8
+    EDITTEXT        IDC_NAME_EDIT_CTRL,51,16,74,14,ES_AUTOHSCROLL
+    LTEXT           "前景颜色",IDC_STATIC,17,45,33,8
+    LTEXT           "",IDC_FORE_COLOR_PANEL,51,40,74,17,NOT WS_VISIBLE | WS_BORDER,WS_EX_TRANSPARENT
+    PUSHBUTTON      ">>",IDC_FORE_COLOR_BTN,127,39,18,19
+    LTEXT           "背景颜色",IDC_STATIC,17,67,33,8
+    LTEXT           "",IDC_BK_COLOR_PANEL,51,62,74,17,NOT WS_VISIBLE | WS_BORDER,WS_EX_TRANSPARENT
+    PUSHBUTTON      ">>",IDC_BK_COLOR_BTN,127,61,18,19
+    COMBOBOX        IDC_HATCH_STYLE_CMB,50,86,96,30,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "图案",IDC_STATIC,19,89,17,8
+    GROUPBOX        "预览",IDC_PREVIEW_PANEL_CTRL,14,108,129,80,0,WS_EX_TRANSPARENT
+END
+
+IDD_DEF_STYLE_EDIT_DLG DIALOGEX 0, 0, 213, 206
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,51,185,50,14
+    PUSHBUTTON      "取消",IDCANCEL,113,185,50,14
+    LTEXT           "名称",IDC_STATIC,10,14,17,8
+    EDITTEXT        IDC_EDIT1,56,11,145,14,ES_AUTOHSCROLL
+    LTEXT           "默认点符号",IDC_STATIC,10,39,41,8
+    LTEXT           "静态",IDC_MARKER_STYLE_PANEL_CTRL,56,31,119,42,NOT WS_VISIBLE | WS_BORDER
+    PUSHBUTTON      "》",IDC_SEL_MARKER_STYLE_BTN,175,36,23,23
+    LTEXT           "默认线符号",IDC_STATIC,7,95,41,8
+    LTEXT           "静态",IDC_DEFAULT_LINE_STYLE_PANEL_CTRL,55,79,120,32,NOT WS_VISIBLE | WS_BORDER
+    PUSHBUTTON      "》",IDC_SEL_LINE_STYLE_BTN,175,83,23,23
+    LTEXT           "默认填充符号",IDC_STATIC,7,132,48,8
+    LTEXT           "静态",IDC_DEF_FILL_STYLE_PANEL_CTRL,55,115,118,41,NOT WS_VISIBLE | WS_BORDER
+    PUSHBUTTON      "》",IDC_SEL_FILL_STYLE_BTN,173,127,23,23
+END
+
+IDD_DATA_SOURCE_MDB_DLG DIALOGEX 0, 0, 394, 197
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MDB数据源"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,125,175,50,14
+    PUSHBUTTON      "取消",IDCANCEL,231,175,50,14
+    PUSHBUTTON      "导入",IDC_BTN_IMPORT,203,6,50,14
+    PUSHBUTTON      "构建空间索引",IDC_BTN_REBUILD_SPATIAL_INDEX,257,7,55,14
+    PUSHBUTTON      "设置空间参考",IDC_BTN_SET_CS,314,7,60,14
+    COMBOBOX        IDC_COMBOX_DATA_SOURCES,65,7,133,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "数据源",IDC_BUTTON_DATA_SOURCE,14,5,50,14
+    CONTROL         "",IDC_DATA_LAYER_LIST_CTRL,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,16,24,364,145
+END
+
+IDD_COORDSYS_DLG DIALOGEX 0, 0, 228, 204
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "坐标系"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,54,183,50,14
+    PUSHBUTTON      "取消",IDCANCEL,140,183,50,14
+    CONTROL         "",IDC_COORD_SYS_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_LINESATROOT | TVS_FULLROWSELECT | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,7,214,130
+    EDITTEXT        IDC_PARAMETERS_EDIT,7,141,214,38,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN
+END
+
+IDD_COLOR_FILL_STYLE_EDIT_DLG DIALOGEX 0, 0, 177, 153
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "颜色填充符号编辑器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,46,131,50,14
+    PUSHBUTTON      "取消",IDCANCEL,107,131,50,14
+    LTEXT           "名字",IDC_STATIC,13,18,17,8
+    EDITTEXT        IDC_NAME_EDIT_CTRL,37,16,88,14,ES_AUTOHSCROLL
+    LTEXT           "颜色",IDC_STATIC,13,45,17,8
+    LTEXT           "",IDC_FORE_COLOR_PANEL,37,40,108,17,NOT WS_VISIBLE | WS_BORDER,WS_EX_TRANSPARENT
+    PUSHBUTTON      ">>",IDC_FORE_COLOR_BTN,145,39,18,19
+    CONTROL         "",IDC_ALPHA_SLIDER_EDIT_CTRL,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,88,63,71,15
+    LTEXT           "透明度",IDC_STATIC,13,66,25,8
+    EDITTEXT        IDC_APHLA_EDIT_CTRL,41,63,45,14,ES_AUTOHSCROLL
+    GROUPBOX        "预览",IDC_PREVIEW_PANEL_CTRL,16,82,147,40,0,WS_EX_TRANSPARENT
+END
+
+IDD_VALUE_CLASS_RENDER_DLG DIALOGEX 0, 0, 311, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "分类渲染"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,177,156,50,14
+    PUSHBUTTON      "取消",IDCANCEL,235,156,50,14
+    COMBOBOX        IDC_CB_FIELD,35,14,80,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "字段",IDC_STATIC,16,15,15,8
+    LTEXT           "",IDC_ST_MSTYLE,245,30,50,40,NOT WS_VISIBLE | WS_BORDER
+    LTEXT           "",IDC_ST_FSTYLE,245,111,50,35,NOT WS_VISIBLE | WS_BORDER
+    LTEXT           "点符号",IDC_STATIC,245,30,22,8
+    LTEXT           "面符号",IDC_STATIC,245,111,22,8
+    CONTROL         "",IDC_LIST_VALUE_CLASS,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,15,30,215,117
+    PUSHBUTTON      "...",IDC_BTN_MSTYLE,280,60,15,10,BS_CENTER | BS_TOP
+    LTEXT           "",IDC_ST_LSTYLE,245,72,50,37,NOT WS_VISIBLE | WS_BORDER
+    PUSHBUTTON      "...",IDC_BTN_LSTYLE,280,99,15,10,BS_CENTER | BS_TOP
+    PUSHBUTTON      "...",IDC_BTN_FSTYLE,280,136,15,10,BS_CENTER | BS_TOP
+    LTEXT           "线符号",IDC_STATIC,245,72,22,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "GMapApp"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "GMapApp.exe"
+            VALUE "LegalCopyright", "TODO:  (C) <公司名>。  保留所有权利。"
+            VALUE "OriginalFilename", "GMapApp.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_LAYER_MANAGER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_IMAGE_MARKER_STYLE_EDIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_TEXTURE_FILL_STYLE_EDIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 180
+    END
+
+    IDD_STYLE_MANAGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 397
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 312
+    END
+
+    IDD_SIMPLE_LINE_EDIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_PROGRESS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_HATCH_FILL_STYLE_EDIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_DEF_STYLE_EDIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_DATA_SOURCE_MDB_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 387
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_COORDSYS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_COLOR_FILL_STYLE_EDIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_VALUE_CLASS_RENDER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_COORDSYS_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DATA_SOURCE_MDB_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_STYLE_MANAGER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VALUE_CLASS_RENDER_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_LAYER_MANAGER_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。  请确保 OLE 库是正确的版本。"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "GMapApp\n\nGMapApp\n\n\nGMapApp.Document\nGMapApp.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "GMapApp"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+    ID_FILE_PAGE_SETUP      "更改打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "更改打印机选项和打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_DIRECT    "使用当前选项打印活动文档\n快速打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权信息\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "清除所选内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制所选内容，将其放入剪贴板\n复制"
+    ID_EDIT_CUT             "剪切所选内容，将其放入剪贴板\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "重做上次撤消的操作\n重做"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "将窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到上一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预览"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STATUS_PANE1        "窗格 1"
+    IDS_STATUS_PANE2        "窗格 2"
+    IDS_TOOLBAR_STANDARD    "标准"
+    IDS_TOOLBAR_CUSTOMIZE   "自定义..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FILE_VIEW           "文件视图"
+    IDS_CLASS_VIEW          "类视图"
+    IDS_OUTPUT_WND          "输出"
+    IDS_PROPERTIES_WND      "属性"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EXPLORER            "资源管理器"
+    IDS_EDIT_MENU           "编辑"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BUILD_TAB           "生成"
+    IDS_DEBUG_TAB           "调试"
+    IDS_FIND_TAB            "查找"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#include "res\GMapApp.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#include "l.CHS\afxprint.rc"    // 打印/打印预览资源
+#if !defined(_AFXDLL)
+#include "l.CHS\afxribbon.rc"        // MFC 功能区和控制条资源
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

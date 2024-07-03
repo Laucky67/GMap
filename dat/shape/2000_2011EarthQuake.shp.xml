@@ -1,0 +1,233 @@
+	m_polyVec.clear();
+	m_polysVec.clear();
+	CString DefExt;
+	DefExt.Format("%s","Shapefile(*.shp)|*.shp|Table(*.tab)|*.tab|所有文件(*.*)|*.*|");
+
+	CFileDialog dlgFile(TRUE,"",NULL,OFN_HIDEREADONLY|OFN_PATHMUSTEXIST|OFN_FILEMUSTEXIST,DefExt,NULL);
+	dlgFile.m_ofn.lpstrTitle="打开数据文件";
+
+	if(dlgFile.DoModal()!=IDOK)  	return ;
+
+	CString   m_strFilePath = dlgFile.GetPathName();	
+	CString   m_strFileName = dlgFile.GetFileTitle();
+
+	GDALAllRegister();
+	OGRRegisterAll();
+
+	OGRDataSource    *poDS;
+	poDS = OGRSFDriverRegistrar::Open( (LPSTR)(LPCTSTR)m_strFilePath, FALSE );
+
+	if( poDS == NULL )
+	{
+		::MessageBox(NULL,_T("数据源档失败！"),_T("提示"),MB_OK|MB_ICONWARNING);
+		return ;
+	}
+
+	OGRLayer  *poLayer;
+	poLayer = poDS->GetLayerByName(m_strFileName);
+
+	OGREnvelope envelope;
+	poLayer->GetExtent(&envelope);
+	m_envelope.MinX = envelope.MinX ;
+	m_envelope.MinY = envelope.MinY ;
+	m_envelope.MaxX = envelope.MaxX ;
+	m_envelope.MaxY = envelope.MaxY ;
+
+	if( poLayer == NULL )
+	{
+		::MessageBox(NULL,_T("图层打开档失败！"),_T("提示"),MB_OK|MB_ICONWARNING);
+		return  ;
+	}
+	OGRFeature *poFeature;
+
+	OGRGeometryFactory factory;
+
+	while( (poFeature = poLayer->GetNextFeature()) != NULL )
+	{
+		OGRFeatureDefn *poFDefn = poLayer->GetLayerDefn();
+		OGRGeometry *poGeometry;
+		poGeometry = poFeature->GetGeometryRef();
+
+		if (poGeometry->getGeometryType() == wkbPolygon ||poGeometry->getGeometryType() == wkbPolygon25D )
+		{
+			OGRPolygon * poPolygon;
+			poPolygon = (OGRPolygon *) poGeometry->clone();
+			m_polyVec.push_back(poPolygon); 
+		}	
+		else if (poGeometry->getGeometryType() == wkbMultiPolygon ||poGeometry->getGeometryType() == wkbMultiPolygon25D )
+		{
+			OGRMultiPolygon * poMultiPolygon;
+			poMultiPolygon = (OGRMultiPolygon *) poGeometry;
+			//ZPB泄露
+			OGRMultiPolygon * m_polyCollection = new OGRMultiPolygon();
+
+			for(int i=0;i< poMultiPolygon->getNumGeometries();i++)
+			{
+				OGRPolygon * poPolygon;
+				poPolygon = (OGRPolygon *)poMultiPolygon->getGeometryRef(i)->clone();
+				m_polyCollection->addGeometry(poPolygon);
+			}
+			m_polysVec.push_back(m_polyCollection); 
+		}
+		OGRFeature::DestroyFeature( poFeature );
+	}
+	OGRDataSource::DestroyDataSource( poDS );
+	OGRCleanupAll();
+
+	//计算scale, w, h，获取整个图层的范围，以用于将地理数据转换为屏幕坐标
+	CClientDC dc(this);
+	CRect rect;
+	this->GetClientRect(&rect);
+	w = rect.Width();  //abs(rect.right-rect.left);
+	h = rect.Height(); //abs(rect.bottom-rect.top);
+
+	double scale_x=0, scale_y=0;
+	scale_x=(double)rect.Width()/(m_envelope.MaxX-m_envelope.MinX);
+	scale_y=(double)rect.Height()/(m_envelope.MaxY -m_envelope.MinY);
+	scale=(scale_x < scale_y) ? scale_x : scale_y;
+
+	//为了缩小地理数据，以全局化
+	scale = scale*0.9;
+
+	CString DefExt1;
+	DefExt1.Format("%s","(*.ASD)|*.ASD|");
+	CFileDialog dlgFile1(TRUE,"ASD",NULL,OFN_HIDEREADONLY|OFN_PATHMUSTEXIST|OFN_FILEMUSTEXIST,DefExt1,NULL);
+	dlgFile1.m_ofn.lpstrTitle="打开面符号库文件";
+
+	if(dlgFile1.DoModal()!=IDOK)
+		return ;
+
+	CString FileName1 = dlgFile1.GetPathName();
+	ISymbolManager * m_pSymbolManger = CreateSymbolManager(); 
+	m_pSymbolManger->LoadFromPolygonSymbolFile(FileName1.GetBuffer(0));
+
+	// 弹出菜单选择symbolID
+	//CSelSymbolID selDLG;
+	//selDLG.SetCartoSymbolLibName(FileName1.GetBuffer(0));
+	//selDLG.DoModal();
+	//int curSymbolID = selDLG.m_curSymbolID;
+	//if (curSymbolID<selDLG.firstSymbolID&&curSymbolID>selDLG.endSymbolID)
+	//	return;
+
+	CPolygonSymbolBroDlg selDLG;
+	selDLG.SetCartoSymbolLibName(FileName1.GetBuffer(0));
+	selDLG.DoModal();
+	int curSymbolID =selDLG.m_CurSelectedIndex+selDLG.firstSymbolID;
+
+
+	int nWidth=rect.Width();
+	int nHeight=rect.Height();
+	CBitBuffer * pBliter = new  CBitBuffer(nWidth, nHeight); 
+	pBliter->Clear(RGB(255,255,255));
+
+	IMapRender* m_pMapRender = CreateMapRender(CartoRender_ImageBuffer);
+
+	double dpi=(double)GetDeviceCaps(dc.m_hAttribDC,LOGPIXELSX);
+	m_pMapRender->SetDPI(dpi);
+	m_pMapRender->Attach(nWidth,nHeight,(unsigned int *)pBliter->m_pRGBA_buffer);
+	m_pMapRender->SetRelatedSymbolManager(m_pSymbolManger);
+	
+	//统计时间
+	CElapsed  * pTimer= new CElapsed();
+	double t1=0;
+	m_pMapRender->BeginRender();
+
+	double x=0,  y=0;
+
+	for (int index=0;index<m_polyVec.size();index++)
+	{
+		OGRPolygon *pPoly =(OGRPolygon *) m_polyVec[index];
+		OGRLinearRing* pOutline=pPoly->getExteriorRing();
+		int j=0;
+		for (j=0;j<pOutline->getNumPoints();j++)
+		{
+			double x=0,  y=0;
+			CoordTransform(pOutline->getX(j), pOutline->getY(j), scale, x, y);
+			x_array[j]=x;
+			y_array[j]=y;
+		}
+		pc[0] = pOutline->getNumPoints();
+
+		for(int k=1;k<=pPoly->getNumInteriorRings();k++)
+		{
+			OGRLinearRing* pInline = pPoly->getInteriorRing(k-1);
+
+			for (int m=0;m<pInline->getNumPoints();m++,j++)
+			{
+				double x=0,  y=0;
+				CoordTransform(pInline->getX(m), pInline->getY(m), scale, x, y);
+				x_array[j]=x;
+				y_array[j]=y;
+			}
+			pc[k]=pInline->getNumPoints();
+		}
+		pTimer->Begin();
+		m_pMapRender->ProcessOnePolyPolygon(curSymbolID,x_array,y_array,pc,pPoly->getNumInteriorRings()+1);	
+		pTimer->End();
+		t1=t1+pTimer->m_dElapsed;
+	}
+
+	for (int index=0;index<m_polysVec.size();index++)
+	{
+		for (int i=0;i<m_polysVec[index]->getNumGeometries();i++)
+		{
+			OGRPolygon *pPoly =(OGRPolygon *) m_polysVec[index]->getGeometryRef(i);
+
+			OGRLinearRing* pOutline=pPoly->getExteriorRing();
+
+			int j=0;
+			for (j=0;j<pOutline->getNumPoints();j++)
+			{
+				double x=0,  y=0;
+				CoordTransform(pOutline->getX(j), pOutline->getY(j), scale, x, y);
+				x_array[j]=x;
+				y_array[j]=y;
+			}
+			pc[0] = pOutline->getNumPoints();
+
+			for(int k=1;k<=pPoly->getNumInteriorRings();k++)
+			{
+				OGRLinearRing* pInline = pPoly->getInteriorRing(k-1);
+
+				for (int m=0;m<pInline->getNumPoints();m++,j++)
+				{
+					double x=0,  y=0;
+					CoordTransform(pInline->getX(m), pInline->getY(m), scale, x, y);
+					x_array[j]=x;
+					y_array[j]=y;
+				}
+				pc[k]=pInline->getNumPoints();
+			}
+			pTimer->Begin();
+			m_pMapRender->ProcessOnePolyPolygon(curSymbolID,x_array,y_array,pc,pPoly->getNumInteriorRings()+1);
+			pTimer->End();
+			t1=t1+pTimer->m_dElapsed;
+			
+		}
+	}
+	CString str;
+	str.Format("符号绘制:%d 毫秒",(int)t1*1000);// (int)(pTimer->m_dElapsed*1000)); 
+	AfxMessageBox(str);
+
+	if (pBliter!=NULL)
+	{
+		if(!pBliter->m_pRGBA_buffer || !dc.m_hDC) return;
+
+		BITMAPINFO dib;
+		memset(&dib, 0, sizeof(BITMAPINFO));
+		dib.bmiHeader.biSize = sizeof(BITMAPINFOHEADER);
+		dib.bmiHeader.biWidth = pBliter->m_dwWidth;
+		dib.bmiHeader.biHeight = pBliter->m_dwHeight;
+		dib.bmiHeader.biPlanes = 1;
+		dib.bmiHeader.biBitCount = 32;
+		dib.bmiHeader.biCompression = BI_RGB;
+		dib.bmiHeader.biSizeImage = pBliter->m_dwWidth * pBliter->m_dwHeight * 4;
+
+		SetDIBitsToDevice(dc.m_hDC, 0, 0, pBliter->m_dwWidth, pBliter->m_dwHeight,
+			0, 0, 0, pBliter->m_dwHeight,
+			pBliter->m_pRGBA_buffer, &dib, DIB_RGB_COLORS);
+	}
+	delete pTimer;
+	delete pBliter;
+	DestorySymbolManager(m_pSymbolManger);
+	DestoryMapRender(m_pMapRender);

@@ -1,0 +1,23 @@
+﻿  pch.cpp
+  dllmain.cpp
+  GQIndex.cpp
+c:\cppgis2022\gmapv0\gmap-mdb-datasource\src\gqindex.cpp(819): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "pch.h"”?
+  GRtIndex.cpp
+c:\cppgis2022\gmapv0\gmap-mdb-datasource\src\grtindex.cpp(509): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "pch.h"”?
+  GRtLeaf.cpp
+c:\cppgis2022\gmapv0\gmap-mdb-datasource\src\grtleaf.cpp(210): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "pch.h"”?
+  GRtNode.cpp
+c:\cppgis2022\gmapv0\gmap-mdb-datasource\src\grtnode.cpp(74): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "pch.h"”?
+  GRtree.cpp
+c:\cppgis2022\gmapv0\gmap-mdb-datasource\src\grtree.cpp(339): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "pch.h"”?
+  GVectorDataInsertMDB.cpp
+c:\cppgis2022\gmapv0\gmap-mdb-datasource\src\gvectordatainsertmdb.cpp(150): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "pch.h"”?
+  GVectorDataLayerMDB.cpp
+c:\cppgis2022\gmapv0\gmap-mdb-datasource\src\gvectordatalayermdb.cpp(332): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "pch.h"”?
+  GVectorDataQueryMDB.cpp
+c:\cppgis2022\gmapv0\gmap-mdb-datasource\src\gvectordataquerymdb.cpp(536): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "pch.h"”?
+  GVectorDataSourceMDB.cpp
+c:\cppgis2022\gmapv0\gmap-mdb-datasource\src\gvectordatasourcemdb.cpp(369): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "pch.h"”?
+  HilbertCurve.cpp
+c:\cppgis2022\gmapv0\gmap-mdb-datasource\src\hilbertcurve.cpp(21): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "pch.h"”?
+  正在生成代码...

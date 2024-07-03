@@ -1,0 +1,121 @@
+﻿    正在创建库 C:\cppgis2022\GMapV0\x64\Debug\gmap-core.lib 和对象 C:\cppgis2022\GMapV0\x64\Debug\gmap-core.exp
+GSimpleLineStyle.obj : error LNK2001: 无法解析的外部符号 GdipAlloc
+GSimpleVectorFeatureRender.obj : error LNK2001: 无法解析的外部符号 GdipAlloc
+GTextureFillStyle.obj : error LNK2001: 无法解析的外部符号 GdipAlloc
+GValueClassRender.obj : error LNK2001: 无法解析的外部符号 GdipAlloc
+GPointEditObject.obj : error LNK2001: 无法解析的外部符号 GdipAlloc
+GPolygonEditObject.obj : error LNK2001: 无法解析的外部符号 GdipAlloc
+GPolygonElement.obj : error LNK2001: 无法解析的外部符号 GdipAlloc
+GRasterLayer.obj : error LNK2001: 无法解析的外部符号 GdipAlloc
+GColorFillStyle.obj : error LNK2001: 无法解析的外部符号 GdipAlloc
+GHatchFillStyle.obj : error LNK2001: 无法解析的外部符号 GdipAlloc
+GImageMapLayer.obj : error LNK2001: 无法解析的外部符号 GdipAlloc
+GImageMarkerStyle.obj : error LNK2001: 无法解析的外部符号 GdipAlloc
+GSimpleLineStyle.obj : error LNK2001: 无法解析的外部符号 GdipFree
+GSimpleVectorFeatureRender.obj : error LNK2001: 无法解析的外部符号 GdipFree
+GTextureFillStyle.obj : error LNK2001: 无法解析的外部符号 GdipFree
+GValueClassRender.obj : error LNK2001: 无法解析的外部符号 GdipFree
+GPointEditObject.obj : error LNK2001: 无法解析的外部符号 GdipFree
+GPolygonEditObject.obj : error LNK2001: 无法解析的外部符号 GdipFree
+GPolygonElement.obj : error LNK2001: 无法解析的外部符号 GdipFree
+GRasterLayer.obj : error LNK2001: 无法解析的外部符号 GdipFree
+GColorFillStyle.obj : error LNK2001: 无法解析的外部符号 GdipFree
+GHatchFillStyle.obj : error LNK2001: 无法解析的外部符号 GdipFree
+GImageMapLayer.obj : error LNK2001: 无法解析的外部符号 GdipFree
+GImageMarkerStyle.obj : error LNK2001: 无法解析的外部符号 GdipFree
+GTextureFillStyle.obj : error LNK2001: 无法解析的外部符号 GdipCloneBrush
+GColorFillStyle.obj : error LNK2001: 无法解析的外部符号 GdipCloneBrush
+GHatchFillStyle.obj : error LNK2001: 无法解析的外部符号 GdipCloneBrush
+GPointEditObject.obj : error LNK2001: 无法解析的外部符号 GdipCloneBrush
+GPolygonEditObject.obj : error LNK2001: 无法解析的外部符号 GdipCloneBrush
+GTextureFillStyle.obj : error LNK2001: 无法解析的外部符号 GdipDeleteBrush
+GColorFillStyle.obj : error LNK2001: 无法解析的外部符号 GdipDeleteBrush
+GHatchFillStyle.obj : error LNK2001: 无法解析的外部符号 GdipDeleteBrush
+GPointEditObject.obj : error LNK2001: 无法解析的外部符号 GdipDeleteBrush
+GPolygonEditObject.obj : error LNK2001: 无法解析的外部符号 GdipDeleteBrush
+GColorFillStyle.obj : error LNK2019: 无法解析的外部符号 GdipCreateSolidFill，该符号在函数 "public: __cdecl Gdiplus::SolidBrush::SolidBrush(class Gdiplus::Color const &)" (??0SolidBrush@Gdiplus@@QEAA@AEBVColor@1@@Z) 中被引用
+GPointEditObject.obj : error LNK2001: 无法解析的外部符号 GdipCreateSolidFill
+GPolygonEditObject.obj : error LNK2001: 无法解析的外部符号 GdipCreateSolidFill
+GCoordinateSystem.obj : error LNK2019: 无法解析的外部符号 pj_fwd，该符号在函数 "public: bool __cdecl gmap::GCoordinateSystemPROJ::Forward(double,double,double *,double *)" (?Forward@GCoordinateSystemPROJ@gmap@@QEAA_NNNPEAN0@Z) 中被引用
+GCoordinateSystem.obj : error LNK2019: 无法解析的外部符号 pj_inv，该符号在函数 "public: bool __cdecl gmap::GCoordinateSystemPROJ::Inverse(double,double,double *,double *)" (?Inverse@GCoordinateSystemPROJ@gmap@@QEAA_NNNPEAN0@Z) 中被引用
+GCoordinateSystem.obj : error LNK2019: 无法解析的外部符号 pj_transform，该符号在函数 "public: virtual void __cdecl gmap::GTransformPROJ::Transform(double,double,double *,double *)" (?Transform@GTransformPROJ@gmap@@UEAAXNNPEAN0@Z) 中被引用
+GCoordinateSystem.obj : error LNK2019: 无法解析的外部符号 pj_is_latlong，该符号在函数 "public: bool __cdecl gmap::GCoordinateSystemPROJ::Forward(double,double,double *,double *)" (?Forward@GCoordinateSystemPROJ@gmap@@QEAA_NNNPEAN0@Z) 中被引用
+GCoordinateSystem.obj : error LNK2019: 无法解析的外部符号 pj_is_geocent，该符号在函数 "public: virtual enum gmap::GCoordinateSystem::CoordinateSystemType __cdecl gmap::GCoordinateSystemPROJ::GetType(void)" (?GetType@GCoordinateSystemPROJ@gmap@@UEAA?AW4CoordinateSystemType@GCoordinateSystem@2@XZ) 中被引用
+GCoordinateSystem.obj : error LNK2019: 无法解析的外部符号 pj_free，该符号在函数 "public: virtual __cdecl gmap::GCoordinateSystemPROJ::~GCoordinateSystemPROJ(void)" (??1GCoordinateSystemPROJ@gmap@@UEAA@XZ) 中被引用
+GCoordinateSystem.obj : error LNK2019: 无法解析的外部符号 pj_init_plus，该符号在函数 "public: static void __cdecl gmap::GCoordinateSystem::LoadEPSG(void)" (?LoadEPSG@GCoordinateSystem@gmap@@SAXXZ) 中被引用
+GFillStyle.obj : error LNK2019: 无法解析的外部符号 GdipFillPolygon，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Graphics::FillPolygon(class Gdiplus::Brush const *,class Gdiplus::PointF const *,int,enum Gdiplus::FillMode)" (?FillPolygon@Graphics@Gdiplus@@QEAA?AW4Status@2@PEBVBrush@2@PEBVPointF@2@HW4FillMode@2@@Z) 中被引用
+GPolygonEditObject.obj : error LNK2001: 无法解析的外部符号 GdipFillPolygon
+GFillStyle.obj : error LNK2019: 无法解析的外部符号 GdipFillPath，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Graphics::FillPath(class Gdiplus::Brush const *,class Gdiplus::GraphicsPath const *)" (?FillPath@Graphics@Gdiplus@@QEAA?AW4Status@2@PEBVBrush@2@PEBVGraphicsPath@2@@Z) 中被引用
+GFillStyle.obj : error LNK2019: 无法解析的外部符号 GdipFillRegion，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Graphics::FillRegion(class Gdiplus::Brush const *,class Gdiplus::Region const *)" (?FillRegion@Graphics@Gdiplus@@QEAA?AW4Status@2@PEBVBrush@2@PEBVRegion@2@@Z) 中被引用
+GHatchFillStyle.obj : error LNK2019: 无法解析的外部符号 GdipCreateHatchBrush，该符号在函数 "public: __cdecl Gdiplus::HatchBrush::HatchBrush(enum Gdiplus::HatchStyle,class Gdiplus::Color const &,class Gdiplus::Color const &)" (??0HatchBrush@Gdiplus@@QEAA@W4HatchStyle@1@AEBVColor@1@1@Z) 中被引用
+GImageMapLayer.obj : error LNK2019: 无法解析的外部符号 GdipCloneImage，该符号在函数 "public: virtual class Gdiplus::Image * __cdecl Gdiplus::Image::Clone(void)" (?Clone@Image@Gdiplus@@UEAAPEAV12@XZ) 中被引用
+GImageMarkerStyle.obj : error LNK2001: 无法解析的外部符号 GdipCloneImage
+GRasterLayer.obj : error LNK2001: 无法解析的外部符号 GdipCloneImage
+GTextureFillStyle.obj : error LNK2001: 无法解析的外部符号 GdipCloneImage
+GImageMapLayer.obj : error LNK2019: 无法解析的外部符号 GdipDisposeImage，该符号在函数 "public: virtual __cdecl Gdiplus::Image::~Image(void)" (??1Image@Gdiplus@@UEAA@XZ) 中被引用
+GImageMarkerStyle.obj : error LNK2001: 无法解析的外部符号 GdipDisposeImage
+GRasterLayer.obj : error LNK2001: 无法解析的外部符号 GdipDisposeImage
+GTextureFillStyle.obj : error LNK2001: 无法解析的外部符号 GdipDisposeImage
+GImageMapLayer.obj : error LNK2019: 无法解析的外部符号 GdipCreateBitmapFromScan0，该符号在函数 "public: __cdecl Gdiplus::Bitmap::Bitmap(int,int,int)" (??0Bitmap@Gdiplus@@QEAA@HHH@Z) 中被引用
+GRasterLayer.obj : error LNK2001: 无法解析的外部符号 GdipCreateBitmapFromScan0
+GImageMapLayer.obj : error LNK2019: 无法解析的外部符号 GdipDrawImageI，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Graphics::DrawImage(class Gdiplus::Image *,int,int)" (?DrawImage@Graphics@Gdiplus@@QEAA?AW4Status@2@PEAVImage@2@HH@Z) 中被引用
+GImageMarkerStyle.obj : error LNK2019: 无法解析的外部符号 GdipLoadImageFromFile，该符号在函数 "public: __cdecl Gdiplus::Image::Image(wchar_t const *,int)" (??0Image@Gdiplus@@QEAA@PEB_WH@Z) 中被引用
+GTextureFillStyle.obj : error LNK2001: 无法解析的外部符号 GdipLoadImageFromFile
+GImageMarkerStyle.obj : error LNK2019: 无法解析的外部符号 GdipLoadImageFromFileICM，该符号在函数 "public: __cdecl Gdiplus::Image::Image(wchar_t const *,int)" (??0Image@Gdiplus@@QEAA@PEB_WH@Z) 中被引用
+GTextureFillStyle.obj : error LNK2001: 无法解析的外部符号 GdipLoadImageFromFileICM
+GImageMarkerStyle.obj : error LNK2019: 无法解析的外部符号 GdipDrawImageRect，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Graphics::DrawImage(class Gdiplus::Image *,float,float,float,float)" (?DrawImage@Graphics@Gdiplus@@QEAA?AW4Status@2@PEAVImage@2@MMMM@Z) 中被引用
+GRasterLayer.obj : error LNK2001: 无法解析的外部符号 GdipDrawImageRect
+GSimpleLineStyle.obj : error LNK2001: 无法解析的外部符号 GdipCreatePen1
+GLineStringEditObject.obj : error LNK2001: 无法解析的外部符号 GdipCreatePen1
+GPointEditObject.obj : error LNK2001: 无法解析的外部符号 GdipCreatePen1
+GPolygonEditObject.obj : error LNK2001: 无法解析的外部符号 GdipCreatePen1
+GRasterLayer.obj : error LNK2001: 无法解析的外部符号 GdipCreatePen1
+GSimpleLineStyle.obj : error LNK2001: 无法解析的外部符号 GdipDeletePen
+GLineStringEditObject.obj : error LNK2001: 无法解析的外部符号 GdipDeletePen
+GPointEditObject.obj : error LNK2001: 无法解析的外部符号 GdipDeletePen
+GPolygonEditObject.obj : error LNK2001: 无法解析的外部符号 GdipDeletePen
+GRasterLayer.obj : error LNK2001: 无法解析的外部符号 GdipDeletePen
+GLineStringEditObject.obj : error LNK2019: 无法解析的外部符号 GdipDrawLine，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Graphics::DrawLine(class Gdiplus::Pen const *,float,float,float,float)" (?DrawLine@Graphics@Gdiplus@@QEAA?AW4Status@2@PEBVPen@2@MMMM@Z) 中被引用
+GPolygonEditObject.obj : error LNK2001: 无法解析的外部符号 GdipDrawLine
+GLineStringEditObject.obj : error LNK2019: 无法解析的外部符号 GdipDrawLines，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Graphics::DrawLines(class Gdiplus::Pen const *,class Gdiplus::PointF const *,int)" (?DrawLines@Graphics@Gdiplus@@QEAA?AW4Status@2@PEBVPen@2@PEBVPointF@2@H@Z) 中被引用
+GSimpleLineStyle.obj : error LNK2001: 无法解析的外部符号 GdipDrawLines
+GLineStringEditObject.obj : error LNK2019: 无法解析的外部符号 GdipDrawRectangle，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Graphics::DrawRectangle(class Gdiplus::Pen const *,float,float,float,float)" (?DrawRectangle@Graphics@Gdiplus@@QEAA?AW4Status@2@PEBVPen@2@MMMM@Z) 中被引用
+GPolygonEditObject.obj : error LNK2001: 无法解析的外部符号 GdipDrawRectangle
+GPointEditObject.obj : error LNK2019: 无法解析的外部符号 GdipDrawEllipse，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Graphics::DrawEllipse(class Gdiplus::Pen const *,float,float,float,float)" (?DrawEllipse@Graphics@Gdiplus@@QEAA?AW4Status@2@PEBVPen@2@MMMM@Z) 中被引用
+GPointEditObject.obj : error LNK2019: 无法解析的外部符号 GdipFillEllipse，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Graphics::FillEllipse(class Gdiplus::Brush const *,float,float,float,float)" (?FillEllipse@Graphics@Gdiplus@@QEAA?AW4Status@2@PEBVBrush@2@MMMM@Z) 中被引用
+GPolygonEditObject.obj : error LNK2019: 无法解析的外部符号 GdipDrawPolygon，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Graphics::DrawPolygon(class Gdiplus::Pen const *,class Gdiplus::PointF const *,int)" (?DrawPolygon@Graphics@Gdiplus@@QEAA?AW4Status@2@PEBVPen@2@PEBVPointF@2@H@Z) 中被引用
+GSimpleLineStyle.obj : error LNK2001: 无法解析的外部符号 GdipDrawPolygon
+GPolygonElement.obj : error LNK2019: 无法解析的外部符号 GdipCreatePath，该符号在函数 "public: __cdecl Gdiplus::GraphicsPath::GraphicsPath(enum Gdiplus::FillMode)" (??0GraphicsPath@Gdiplus@@QEAA@W4FillMode@1@@Z) 中被引用
+GSimpleVectorFeatureRender.obj : error LNK2001: 无法解析的外部符号 GdipCreatePath
+GValueClassRender.obj : error LNK2001: 无法解析的外部符号 GdipCreatePath
+GPolygonElement.obj : error LNK2019: 无法解析的外部符号 GdipClonePath，该符号在函数 "public: class Gdiplus::GraphicsPath * __cdecl Gdiplus::GraphicsPath::Clone(void)const " (?Clone@GraphicsPath@Gdiplus@@QEBAPEAV12@XZ) 中被引用
+GSimpleVectorFeatureRender.obj : error LNK2001: 无法解析的外部符号 GdipClonePath
+GValueClassRender.obj : error LNK2001: 无法解析的外部符号 GdipClonePath
+GPolygonElement.obj : error LNK2019: 无法解析的外部符号 GdipDeletePath，该符号在函数 "public: __cdecl Gdiplus::GraphicsPath::~GraphicsPath(void)" (??1GraphicsPath@Gdiplus@@QEAA@XZ) 中被引用
+GSimpleVectorFeatureRender.obj : error LNK2001: 无法解析的外部符号 GdipDeletePath
+GValueClassRender.obj : error LNK2001: 无法解析的外部符号 GdipDeletePath
+GPolygonElement.obj : error LNK2019: 无法解析的外部符号 GdipAddPathPolygon，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::GraphicsPath::AddPolygon(class Gdiplus::PointF const *,int)" (?AddPolygon@GraphicsPath@Gdiplus@@QEAA?AW4Status@2@PEBVPointF@2@H@Z) 中被引用
+GSimpleVectorFeatureRender.obj : error LNK2001: 无法解析的外部符号 GdipAddPathPolygon
+GValueClassRender.obj : error LNK2001: 无法解析的外部符号 GdipAddPathPolygon
+GPolygonElement.obj : error LNK2019: 无法解析的外部符号 GdipCreateRegionPath，该符号在函数 "public: __cdecl Gdiplus::Region::Region(class Gdiplus::GraphicsPath const *)" (??0Region@Gdiplus@@QEAA@PEBVGraphicsPath@1@@Z) 中被引用
+GSimpleVectorFeatureRender.obj : error LNK2001: 无法解析的外部符号 GdipCreateRegionPath
+GValueClassRender.obj : error LNK2001: 无法解析的外部符号 GdipCreateRegionPath
+GPolygonElement.obj : error LNK2019: 无法解析的外部符号 GdipDeleteRegion，该符号在函数 "public: __cdecl Gdiplus::Region::~Region(void)" (??1Region@Gdiplus@@QEAA@XZ) 中被引用
+GSimpleVectorFeatureRender.obj : error LNK2001: 无法解析的外部符号 GdipDeleteRegion
+GValueClassRender.obj : error LNK2001: 无法解析的外部符号 GdipDeleteRegion
+GPolygonElement.obj : error LNK2019: 无法解析的外部符号 GdipCombineRegionPath，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Region::Exclude(class Gdiplus::GraphicsPath const *)" (?Exclude@Region@Gdiplus@@QEAA?AW4Status@2@PEBVGraphicsPath@2@@Z) 中被引用
+GSimpleVectorFeatureRender.obj : error LNK2001: 无法解析的外部符号 GdipCombineRegionPath
+GValueClassRender.obj : error LNK2001: 无法解析的外部符号 GdipCombineRegionPath
+GRasterLayer.obj : error LNK2019: 无法解析的外部符号 GdipBitmapLockBits，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Bitmap::LockBits(class Gdiplus::Rect const *,unsigned int,int,class Gdiplus::BitmapData *)" (?LockBits@Bitmap@Gdiplus@@QEAA?AW4Status@2@PEBVRect@2@IHPEAVBitmapData@2@@Z) 中被引用
+GRasterLayer.obj : error LNK2019: 无法解析的外部符号 GdipBitmapUnlockBits，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Bitmap::UnlockBits(class Gdiplus::BitmapData *)" (?UnlockBits@Bitmap@Gdiplus@@QEAA?AW4Status@2@PEAVBitmapData@2@@Z) 中被引用
+GRasterLayer.obj : error LNK2019: 无法解析的外部符号 GdipDrawRectangleI，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Graphics::DrawRectangle(class Gdiplus::Pen const *,int,int,int,int)" (?DrawRectangle@Graphics@Gdiplus@@QEAA?AW4Status@2@PEBVPen@2@HHHH@Z) 中被引用
+GSimpleLineStyle.obj : error LNK2019: 无法解析的外部符号 GdipSetPenStartCap，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Pen::SetStartCap(enum Gdiplus::LineCap)" (?SetStartCap@Pen@Gdiplus@@QEAA?AW4Status@2@W4LineCap@2@@Z) 中被引用
+GSimpleLineStyle.obj : error LNK2019: 无法解析的外部符号 GdipSetPenEndCap，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Pen::SetEndCap(enum Gdiplus::LineCap)" (?SetEndCap@Pen@Gdiplus@@QEAA?AW4Status@2@W4LineCap@2@@Z) 中被引用
+GSimpleLineStyle.obj : error LNK2019: 无法解析的外部符号 GdipSetPenDashCap197819，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Pen::SetDashCap(enum Gdiplus::DashCap)" (?SetDashCap@Pen@Gdiplus@@QEAA?AW4Status@2@W4DashCap@2@@Z) 中被引用
+GSimpleLineStyle.obj : error LNK2019: 无法解析的外部符号 GdipSetPenLineJoin，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Pen::SetLineJoin(enum Gdiplus::LineJoin)" (?SetLineJoin@Pen@Gdiplus@@QEAA?AW4Status@2@W4LineJoin@2@@Z) 中被引用
+GSimpleLineStyle.obj : error LNK2019: 无法解析的外部符号 GdipSetPenDashStyle，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Pen::SetDashStyle(enum Gdiplus::DashStyle)" (?SetDashStyle@Pen@Gdiplus@@QEAA?AW4Status@2@W4DashStyle@2@@Z) 中被引用
+GSimpleLineStyle.obj : error LNK2019: 无法解析的外部符号 GdipDrawPath，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::Graphics::DrawPath(class Gdiplus::Pen const *,class Gdiplus::GraphicsPath const *)" (?DrawPath@Graphics@Gdiplus@@QEAA?AW4Status@2@PEBVPen@2@PEBVGraphicsPath@2@@Z) 中被引用
+GSimpleVectorFeatureRender.obj : error LNK2019: 无法解析的外部符号 GdipClosePathFigure，该符号在函数 "public: enum Gdiplus::Status __cdecl Gdiplus::GraphicsPath::CloseFigure(void)" (?CloseFigure@GraphicsPath@Gdiplus@@QEAA?AW4Status@2@XZ) 中被引用
+GValueClassRender.obj : error LNK2001: 无法解析的外部符号 GdipClosePathFigure
+GTextureFillStyle.obj : error LNK2019: 无法解析的外部符号 GdipCreateTexture，该符号在函数 "public: __cdecl Gdiplus::TextureBrush::TextureBrush(class Gdiplus::Image *,enum Gdiplus::WrapMode)" (??0TextureBrush@Gdiplus@@QEAA@PEAVImage@1@W4WrapMode@1@@Z) 中被引用
+C:\cppgis2022\GMapV0\x64\Debug\gmap-core.dll : fatal error LNK1120: 49 个无法解析的外部命令

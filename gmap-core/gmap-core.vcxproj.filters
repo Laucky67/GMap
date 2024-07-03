@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{1668743d-0d3e-4b0e-bd74-5c7786de5702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{31c64a37-0071-4b78-a358-95995a7893e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base">
+      <UniqueIdentifier>{4d49333c-8be3-430e-bcb5-2e7ed7933679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\geometry">
+      <UniqueIdentifier>{04150ebb-1994-4ed9-bf43-5ab6498b0133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\map">
+      <UniqueIdentifier>{b6a02f32-9970-407f-822b-4600073ef6d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\graphics">
+      <UniqueIdentifier>{4465f01e-c2d0-47a7-94db-6def97abb6a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\coordsys">
+      <UniqueIdentifier>{e73eb5b1-8091-4fbe-b4da-a7a9b7b878d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\style">
+      <UniqueIdentifier>{ef0091cd-8447-4f93-a52e-55aaa15b2c98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\editing-uitool">
+      <UniqueIdentifier>{85fb69d5-b294-46fc-b7dd-fc4916adc603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\raster">
+      <UniqueIdentifier>{cbc823e3-fa76-4edd-ac1a-5caba7ab86d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\vector">
+      <UniqueIdentifier>{bae22eb6-61f9-4656-bcc7-fd7bbb61ba2c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\GLine.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GRange.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GRectangle2D.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GTypes.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUnknown.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GVector2D.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IFile.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IProgressUI.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GMathEngine.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GGeometry.h">
+      <Filter>src\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GLinearRing.h">
+      <Filter>src\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GLineString.h">
+      <Filter>src\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GPoint.h">
+      <Filter>src\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GPolygon.h">
+      <Filter>src\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GMultiGeometry.h">
+      <Filter>src\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GCoreBase.h">
+      <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GMap.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GMapDrawing.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GMapLayer.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GCoordinateSystem.h">
+      <Filter>src\coordsys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GColorFillStyle.h">
+      <Filter>src\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GFillStyle.h">
+      <Filter>src\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GHatchFillStyle.h">
+      <Filter>src\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GImageMarkerStyle.h">
+      <Filter>src\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GLineStyle.h">
+      <Filter>src\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GMarkerStyle.h">
+      <Filter>src\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GSimpleLineStyle.h">
+      <Filter>src\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GStyle.h">
+      <Filter>src\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GStyleGroup.h">
+      <Filter>src\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GStyleMapDrawing.h">
+      <Filter>src\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GTextureFillStyle.h">
+      <Filter>src\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GGraphicsElement.h">
+      <Filter>src\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GGraphicsLayer.h">
+      <Filter>src\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GPolygonElement.h">
+      <Filter>src\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GPointElement.h">
+      <Filter>src\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GHitTestHelper.h">
+      <Filter>src\editing-uitool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GLineStringEditObject.h">
+      <Filter>src\editing-uitool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GMapEditObject.h">
+      <Filter>src\editing-uitool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GPointEditObject.h">
+      <Filter>src\editing-uitool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GPolygonEditObject.h">
+      <Filter>src\editing-uitool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GMapUITool.h">
+      <Filter>src\editing-uitool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GSimpleAddElementTool.h">
+      <Filter>src\editing-uitool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GSimpleEditTool.h">
+      <Filter>src\editing-uitool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GLineStringElement.h">
+      <Filter>src\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GVectorDataCommand.h">
+      <Filter>src\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GVectorDataLayer.h">
+      <Filter>src\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GVectorDataLayerDef.h">
+      <Filter>src\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GVectorDataSource.h">
+      <Filter>src\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GFieldDef.h">
+      <Filter>src\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GFieldValue.h">
+      <Filter>src\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GImageMapLayer.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GImageSource.h">
+      <Filter>src\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GRasterLayer.h">
+      <Filter>src\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GValueClassRender.h">
+      <Filter>src\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GSimpleVectorFeatureRender.h">
+      <Filter>src\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GVectorFeatureRender.h">
+      <Filter>src\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GVectorMapLayer.h">
+      <Filter>src\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GRasterColorConvert.h">
+      <Filter>src\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GRasterData.h">
+      <Filter>src\raster</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\FileUtil.cpp">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GGeometry.cpp">
+      <Filter>src\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLinearRing.cpp">
+      <Filter>src\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLineString.cpp">
+      <Filter>src\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GPoint.cpp">
+      <Filter>src\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GPolygon.cpp">
+      <Filter>src\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GMultiGeometry.cpp">
+      <Filter>src\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GMap.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GMapLayer.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GCoordinateSystem.cpp">
+      <Filter>src\coordsys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GColorFillStyle.cpp">
+      <Filter>src\style</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GFillStyle.cpp">
+      <Filter>src\style</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GHatchFillStyle.cpp">
+      <Filter>src\style</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GImageMarkerStyle.cpp">
+      <Filter>src\style</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLineStyle.cpp">
+      <Filter>src\style</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GMarkerStyle.cpp">
+      <Filter>src\style</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GSimpleLineStyle.cpp">
+      <Filter>src\style</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GStyle.cpp">
+      <Filter>src\style</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GStyleGroup.cpp">
+      <Filter>src\style</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GTextureFillStyle.cpp">
+      <Filter>src\style</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GGraphicsElement.cpp">
+      <Filter>src\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GGraphicsLayer.cpp">
+      <Filter>src\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GPolygonElement.cpp">
+      <Filter>src\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GPointElement.cpp">
+      <Filter>src\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLineStringEditObject.cpp">
+      <Filter>src\editing-uitool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GMapEditObject.cpp">
+      <Filter>src\editing-uitool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GPointEditObject.cpp">
+      <Filter>src\editing-uitool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GPolygonEditObject.cpp">
+      <Filter>src\editing-uitool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GSimpleAddElementTool.cpp">
+      <Filter>src\editing-uitool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GSimpleEditTool.cpp">
+      <Filter>src\editing-uitool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLineStringElement.cpp">
+      <Filter>src\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GVectorDataCommand.cpp">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GVectorDataLayer.cpp">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GVectorDataLayerDef.cpp">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GVectorDataSource.cpp">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GFieldDef.cpp">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GFieldValue.cpp">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GImageMapLayer.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GImageSource.cpp">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GRasterLayer.cpp">
+      <Filter>src\raster</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GSimpleVectorFeatureRender.cpp">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GValueClassRender.cpp">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GVectorMapLayer.cpp">
+      <Filter>src\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GRasterColorConvert.cpp">
+      <Filter>src\raster</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

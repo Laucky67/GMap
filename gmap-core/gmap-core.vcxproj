@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\GColorFillStyle.h" />
+    <ClInclude Include="src\GCoordinateSystem.h" />
+    <ClInclude Include="src\GCoreBase.h" />
+    <ClInclude Include="src\GFieldDef.h" />
+    <ClInclude Include="src\GFieldValue.h" />
+    <ClInclude Include="src\GFillStyle.h" />
+    <ClInclude Include="src\GGeometry.h" />
+    <ClInclude Include="src\GGraphicsElement.h" />
+    <ClInclude Include="src\GGraphicsLayer.h" />
+    <ClInclude Include="src\GHatchFillStyle.h" />
+    <ClInclude Include="src\GHitTestHelper.h" />
+    <ClInclude Include="src\GImageMapLayer.h" />
+    <ClInclude Include="src\GImageMarkerStyle.h" />
+    <ClInclude Include="src\GImageSource.h" />
+    <ClInclude Include="src\GLine.h" />
+    <ClInclude Include="src\GLinearRing.h" />
+    <ClInclude Include="src\GLineStringElement.h" />
+    <ClInclude Include="src\GLineString.h" />
+    <ClInclude Include="src\GLineStringEditObject.h" />
+    <ClInclude Include="src\GLineStyle.h" />
+    <ClInclude Include="src\GMap.h" />
+    <ClInclude Include="src\GMapDrawing.h" />
+    <ClInclude Include="src\GMapEditObject.h" />
+    <ClInclude Include="src\GMapLayer.h" />
+    <ClInclude Include="src\GMapUITool.h" />
+    <ClInclude Include="src\GMarkerStyle.h" />
+    <ClInclude Include="src\GMathEngine.h" />
+    <ClInclude Include="src\GMultiGeometry.h" />
+    <ClInclude Include="src\GPoint.h" />
+    <ClInclude Include="src\GPointEditObject.h" />
+    <ClInclude Include="src\GPointElement.h" />
+    <ClInclude Include="src\GPolygon.h" />
+    <ClInclude Include="src\GPolygonEditObject.h" />
+    <ClInclude Include="src\GPolygonElement.h" />
+    <ClInclude Include="src\GRange.h" />
+    <ClInclude Include="src\GRasterData.h" />
+    <ClInclude Include="src\GRasterColorConvert.h" />
+    <ClInclude Include="src\GRasterLayer.h" />
+    <ClInclude Include="src\GRectangle2D.h" />
+    <ClInclude Include="src\GSimpleAddElementTool.h" />
+    <ClInclude Include="src\GSimpleEditTool.h" />
+    <ClInclude Include="src\GSimpleLineStyle.h" />
+    <ClInclude Include="src\GSimpleVectorFeatureRender.h" />
+    <ClInclude Include="src\GStyle.h" />
+    <ClInclude Include="src\GStyleGroup.h" />
+    <ClInclude Include="src\GStyleMapDrawing.h" />
+    <ClInclude Include="src\GTextureFillStyle.h" />
+    <ClInclude Include="src\GTypes.h" />
+    <ClInclude Include="src\GUnknown.h" />
+    <ClInclude Include="src\GValueClassRender.h" />
+    <ClInclude Include="src\GVector2D.h" />
+    <ClInclude Include="src\GVectorDataCommand.h" />
+    <ClInclude Include="src\GVectorDataLayer.h" />
+    <ClInclude Include="src\GVectorDataLayerDef.h" />
+    <ClInclude Include="src\GVectorDataSource.h" />
+    <ClInclude Include="src\GVectorFeatureRender.h" />
+    <ClInclude Include="src\GVectorMapLayer.h" />
+    <ClInclude Include="src\IFile.h" />
+    <ClInclude Include="src\IProgressUI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\FileUtil.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\GColorFillStyle.cpp" />
+    <ClCompile Include="src\GCoordinateSystem.cpp" />
+    <ClCompile Include="src\GFieldDef.cpp" />
+    <ClCompile Include="src\GFieldValue.cpp" />
+    <ClCompile Include="src\GFillStyle.cpp" />
+    <ClCompile Include="src\GGeometry.cpp" />
+    <ClCompile Include="src\GGraphicsElement.cpp" />
+    <ClCompile Include="src\GGraphicsLayer.cpp" />
+    <ClCompile Include="src\GHatchFillStyle.cpp" />
+    <ClCompile Include="src\GImageMapLayer.cpp" />
+    <ClCompile Include="src\GImageMarkerStyle.cpp" />
+    <ClCompile Include="src\GImageSource.cpp" />
+    <ClCompile Include="src\GLinearRing.cpp" />
+    <ClCompile Include="src\GLineStringElement.cpp" />
+    <ClCompile Include="src\GLineString.cpp" />
+    <ClCompile Include="src\GLineStringEditObject.cpp" />
+    <ClCompile Include="src\GLineStyle.cpp" />
+    <ClCompile Include="src\GMap.cpp" />
+    <ClCompile Include="src\GMapEditObject.cpp" />
+    <ClCompile Include="src\GMapLayer.cpp" />
+    <ClCompile Include="src\GMarkerStyle.cpp" />
+    <ClCompile Include="src\GMultiGeometry.cpp" />
+    <ClCompile Include="src\GPoint.cpp" />
+    <ClCompile Include="src\GPointEditObject.cpp" />
+    <ClCompile Include="src\GPointElement.cpp" />
+    <ClCompile Include="src\GPolygon.cpp" />
+    <ClCompile Include="src\GPolygonEditObject.cpp" />
+    <ClCompile Include="src\GPolygonElement.cpp" />
+    <ClCompile Include="src\GRasterColorConvert.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\GRasterLayer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\GSimpleAddElementTool.cpp" />
+    <ClCompile Include="src\GSimpleEditTool.cpp" />
+    <ClCompile Include="src\GSimpleLineStyle.cpp" />
+    <ClCompile Include="src\GSimpleVectorFeatureRender.cpp" />
+    <ClCompile Include="src\GStyle.cpp" />
+    <ClCompile Include="src\GStyleGroup.cpp" />
+    <ClCompile Include="src\GTextureFillStyle.cpp" />
+    <ClCompile Include="src\GValueClassRender.cpp" />
+    <ClCompile Include="src\GVectorDataCommand.cpp" />
+    <ClCompile Include="src\GVectorDataLayer.cpp" />
+    <ClCompile Include="src\GVectorDataLayerDef.cpp" />
+    <ClCompile Include="src\GVectorDataSource.cpp" />
+    <ClCompile Include="src\GVectorMapLayer.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{7E8071CD-05C1-4855-BC26-675ED466F9C2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>gmapcore</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;GMAPCORE_EXPORTS;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>./proj4/include;./gdal/include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>gdiplus.lib;./proj4/lib/debug/proj4d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(ProjectDir)src\*.h" "$(ProjectDir)\include"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;GMAPCORE_EXPORTS;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\cppgis\GMapV0\gmap-core\proj4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;GMAPCORE_EXPORTS;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>./proj4/include;./gdal/include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>gdiplus.lib;./proj4/lib/release/proj4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(ProjectDir)src\*.h" "$(ProjectDir)\include"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;GMAPCORE_EXPORTS;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\cppgis\GMapV0\gmap-core\proj4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
